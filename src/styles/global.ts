@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -29,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.50s linear;
+    /* transition: all 0.50s linear; */
     color:${({ theme }) => theme.foreground};
   }
 
@@ -58,3 +59,15 @@ export const GlobalStyles = createGlobalStyle`
     list-style:none;
   }
 `;
+
+export const PagesWrapper = styled.div`
+  width: 20rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  > main {
+    width: 100%;
+    height: 100%;
+  }
+`
